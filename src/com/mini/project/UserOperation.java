@@ -176,14 +176,12 @@ public class UserOperation //implements Interface1
 				}
 			}
 			System.out.println("Score is "+score);
-			System.out.println("Enter the Name" );
+			System.out.println("Enter your Name" );
 		    fname =sc.next();
 		    String q="update Student_Data set score=? where fname=fname";
 			//String query1="update into Student_Data set score=? where fname=?";
 		    //String query1="insert into Student_Data  (fName,score) values (?,?)";
 			PreparedStatement ps1 = con.prepareStatement(q);
-			
-			//ps1.setString(1, fname);
 			ps1.setInt(1, score);
 			int i = ps1.executeUpdate();
 			System.out.println("Score added into database "+i);
@@ -196,9 +194,4 @@ public class UserOperation //implements Interface1
 			e.printStackTrace();
 		}
     }
-    public static void main(String [] args)
-	{
-    	UserOperation obj = new UserOperation();
-    	obj.displayMenu();
-	}
 }

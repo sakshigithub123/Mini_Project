@@ -13,20 +13,17 @@ public class AdminOperation
 	{
 		System.out.println("                     Welcome to Quiz Application               ");
         System.out.println("-------------------------------------------------------------");
-        System.out.println("Press 1.  to see all students score");
-        System.out.println("Press 2.  to fetch student score using Id");
-        System.out.println("Press 3.  to see quiz questions");
+//        System.out.println("Press 1.  to see all students score");
+        System.out.println("Press 1.  to fetch student score using Id");
+        System.out.println("Press 2.  to see quiz questions");
 		System.out.println("Select one option")	;
 		 int choice=sc.nextInt();
 		 switch(choice)
 		 {
 		 case 1:
-			 System.out.println("Student score :");
-			 break;
-		 case 2:
 			 getStudentScore();
 			 break;
-		 case 3:
+		 case 2:
 			 displayQuoAndAns();
 			 break;
 		 }
