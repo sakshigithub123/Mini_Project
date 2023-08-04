@@ -27,6 +27,7 @@ public class UserOperation //implements Interface1
 			 System.out.println("Press 3. to start the quiz");
 			 int b=sc.nextInt();
 			 displayQuestion();
+			 again();
 			 break;
 		 case 2:
 			 System.out.println("Login Form ");
@@ -44,7 +45,6 @@ public class UserOperation //implements Interface1
 		char ch=sc.next().charAt(0);
 		if(ch == 'y')
 		{
-			//instead of disply call login wala method
 			displayMenu();
 			//return;
 		}
